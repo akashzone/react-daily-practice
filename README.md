@@ -12,6 +12,3 @@ Steps to set up reactJS in local environment.
 7)npm run dev -> to start vite server
 
 
-
-React -> Props
-![alt text](image.png)
