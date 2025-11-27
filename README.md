@@ -10,3 +10,8 @@ Steps to set up reactJS in local environment.
 5)cd project_folder
 6)npm install -> to get node_modules
 7)npm run dev -> to start vite server
+
+
+
+React -> Props
+![alt text](image.png)
