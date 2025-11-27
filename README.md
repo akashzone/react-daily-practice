@@ -1,3 +1,6 @@
+React JS:
+
+A complete journey of learning React, including notes, reusable components, practice apps, projects, and experiments. Covers fundamentals to advanced concepts with hands-on code and real examples.
 
 Steps to set up reactJS in local environment.
 1) npm create vitee@latest
