@@ -1,12 +1,11 @@
 
 import './App.css'
-import ProductTab from './ProductTab.jsx'
+import Todo from './Todo.jsx'
 function App() {
   return (
     <>
      
-     <p>React Props</p>
-     <ProductTab />
+      <Todo />
     </>
   )
 }
