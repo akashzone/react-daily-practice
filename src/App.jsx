@@ -1,11 +1,11 @@
 
 import './App.css'
-import Todo from './Todo.jsx'
+import Lottery from './Lottery.jsx'
 function App() {
   return (
     <>
      
-      <Todo />
+      <Lottery />
     </>
   )
 }

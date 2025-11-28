@@ -1,0 +1,15 @@
+
+
+.ticket{
+    border: 2px solid white;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 12px;
+}
+.ticket span{
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 10px;
+}
