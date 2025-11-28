@@ -1,9 +1,11 @@
 
 import { useState } from 'react';
 import './Lottery.css';
-import { generateRandomNumber } from './Ticket.js';
+import { generateRandomNumber } from './Helper.js';
+import Ticket from './Ticket.jsx';
 export default function Lottery() {
     const [ticket, setTicket] = useState(generateRandomNumber(3));
+    console.log("CURRENT TICKET:", ticket);
 
     function buyNewTicket() {
         setTicket(generateRandomNumber(3)); 
@@ -13,9 +15,7 @@ export default function Lottery() {
         <>
         <h1>Lottery Game</h1>
         <div className="ticket">
-            <span>{ticket[0]}</span>
-            <span>{ticket[1]}</span>
-            <span>{ticket[2]}</span>
+            <Ticket ticket={ticket} />
         </div>
 
         <button onClick={buyNewTicket}>Buy new Ticket</button>
