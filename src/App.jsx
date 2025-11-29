@@ -3,7 +3,7 @@ import './App.css'
 import Lottery from './Lottery.jsx'
 function App() {
   function winCondition(ticket) {
-    return ticket.reduce((sum, curr)=> sum + curr, 0) === 15;
+    return ticket.every((num)=> num ===  ticket[0])
   }
   return (
     <>
