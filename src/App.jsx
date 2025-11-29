@@ -2,9 +2,12 @@
 import './App.css'
 import Lottery from './Lottery.jsx'
 function App() {
+  function winCondition(ticket) {
+    return ticket.reduce((sum, curr)=> sum + curr, 0) === 15;
+  }
   return (
     <>
-      <Lottery />
+      <Lottery n={3} winCondition={winCondition}/>
     </>
   )
 }

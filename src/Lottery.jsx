@@ -3,14 +3,14 @@ import { useState } from 'react';
 import './Lottery.css';
 import { generateRandomNumber } from './Helper.js';
 import Ticket from './Ticket.jsx';
-export default function Lottery() {
-    const [ticket, setTicket] = useState(generateRandomNumber(3));
+export default function Lottery({n=3,winCondition}) {
+    const [ticket, setTicket] = useState(generateRandomNumber(n));
     console.log("CURRENT TICKET:", ticket);
 
     function buyNewTicket() {
-        setTicket(generateRandomNumber(3)); 
+        setTicket(generateRandomNumber(n)); 
     }
-    let isWin = ticket.reduce((sum, curr)=> sum + curr, 0) === 15;
+    let isWin = winCondition(ticket);
     return (
         <>
         <h1>Lottery Game</h1>
